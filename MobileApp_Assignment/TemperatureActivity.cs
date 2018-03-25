@@ -16,6 +16,7 @@ namespace MobileApp_Assignment
     public class TemperatureActivity : Activity
     {
         double Temperature;
+        string TemperatureOutput;
         RadioButton Celcius, Fahrenheit;
         Button ConvertT;
         EditText TempTxt;
@@ -33,7 +34,7 @@ namespace MobileApp_Assignment
             Fahrenheit = FindViewById<RadioButton>(Resource.Id.rbtnFah);
             ConvertT = FindViewById<Button>(Resource.Id.btnConvertTemp);
 
-            TempConversion.Text = "";
+
 
             ConvertT.Click += ConvertT_Click;
 
@@ -42,13 +43,16 @@ namespace MobileApp_Assignment
 
         private void ConvertT_Click(object sender, EventArgs e)
         {
-            if (Celcius.Selected)
-            {
+        //    if (Celcius.)
+        //    {
                 if (double.TryParse(TempTxt.Text, out double TemperatureF))
                 {
                     Temperature = (TemperatureF - 32) * 5 / 9;
 
-                    
+                    TemperatureOutput = Temperature.ToString();
+
+                    TempConversion.Text = $"{TemperatureOutput} C";
+                    TempTxt.Text = "";
                 }
                 else
                 {
@@ -57,25 +61,30 @@ namespace MobileApp_Assignment
                                                 ToastLength.Long);
                     toastMsg.Show();
                 }
-            }//end celcius conversion
+            //}//end celcius conversion
 
-            if (Fahrenheit.Selected)
-            {
-                if (double.TryParse(TempTxt.Text, out double TemperatureC))
-                {
-                    Temperature = TemperatureC * 9 / 5 + 32;
+            //if (Fahrenheit.Selected)
+            //{
+            //    if (double.TryParse(TempTxt.Text, out double TemperatureC))
+            //    {
+            //        Temperature = TemperatureC * 9 / 5 + 32;
 
-                }
-                else
-                {
-                    Toast toastMsg = Toast.MakeText(this,
-                                                $"Error--{TempTxt.Text} is not a valid value. Please try again.",
-                                                ToastLength.Long);
-                    toastMsg.Show();
-                }
-            }
+            //        TemperatureOutput = Temperature.ToString();
 
-            TempConversion.Text = Temperature.ToString();
+            //        TempConversion.Text = $"{TemperatureOutput} F";
+            //        TempTxt.Text = "";
+            //    }
+            //    else
+            //    {
+            //        Toast toastMsg = Toast.MakeText(this,
+            //                                    $"Error--{TempTxt.Text} is not a valid value. Please try again.",
+            //                                    ToastLength.Long);
+            //        toastMsg.Show();
+            //    }
+            //}
+
+
+           
 
         }
     }

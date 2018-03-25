@@ -43,7 +43,6 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:hint="test"
         android:gravity="center" />
     <LinearLayout
         android:layout_weight="1"
