@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <TextView
+        android:id="@+id/lblWeightConversion"
+        android:text="@string/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/txtWeightGrams"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:hint="Enter Grams here"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtWeightOz"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:hint="Enter Ounces here"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtWeightCups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:hint="Enter Cups here"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/txtConvertedWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Convert"
+            android:id="@+id/btnConvertWeight" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Home"
+            android:id="@+id/btnHome" />
+    </LinearLayout>
+</LinearLayout>

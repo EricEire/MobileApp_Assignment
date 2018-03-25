@@ -3,4 +3,5 @@
   <string name="app_name">Baking App</string>
   <string name="home">Home</string>
   <string name="temp">Temperature Conversion</string>
+  <string name="weight">Weight Conversion</string>
 </resources>

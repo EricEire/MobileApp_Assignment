@@ -12,16 +12,15 @@ using Android.Widget;
 
 namespace MobileApp_Assignment.Adapters
 {
-    class TempConversionAdapter : BaseAdapter
+    class WeightConversionAdapter : BaseAdapter
     {
-        
-        Context Context;
-        public double temp { get; }
-      
 
-        public TempConversionAdapter(double t,RadioButton c, RadioButton f,Context context)
+        Context Context;
+        public double Weight { get; }
+
+        public WeightConversionAdapter(double w,Context context)
         {
-            temp = t;
+            Weight = w;
             Context = context;
         }
 
@@ -39,24 +38,25 @@ namespace MobileApp_Assignment.Adapters
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;
-            TempConversionAdapterViewHolder holder = null;
+            WeightConversionAdapterViewHolder holder = null;
 
-           
             if (view == null)
             {
                 var inflater = Context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
                 view = inflater.Inflate(Resource.Layout.TempConversion, parent, false);
 
-                
+
                 var txtTemperature = view.FindViewById<EditText>(Resource.Id.txtTemp);
-                
+
                 holder = new TempConversionAdapterViewHolder(txtTemperature);
 
                 view.Tag = holder;
             }
 
-          
-        
+
+
+            //fill in your items
+            //holder.Title.Text = "new text here";
 
             return view;
         }
@@ -72,15 +72,9 @@ namespace MobileApp_Assignment.Adapters
 
     }
 
-    class TempConversionAdapterViewHolder : Java.Lang.Object
+    class WeightConversionAdapterViewHolder : Java.Lang.Object
     {
         //Your adapter views to re-use
-
-        public EditText Temp { get; }
-
-        public TempConversionAdapterViewHolder(EditText txtTemperature)
-        {
-            txtTemperature.Text = Temp.Text;
-        }
+        //public TextView Title { get; set; }
     }
 }

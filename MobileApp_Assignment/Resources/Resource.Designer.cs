@@ -65,6 +65,9 @@ namespace MobileApp_Assignment
 			// aapt resource value: 0x7f040004
 			public const int lblTempConversion = 2130968580;
 			
+			// aapt resource value: 0x7f04000c
+			public const int lblWeightConversion = 2130968588;
+			
 			// aapt resource value: 0x7f040006
 			public const int radioGroupTemps = 2130968582;
 			
@@ -77,8 +80,20 @@ namespace MobileApp_Assignment
 			// aapt resource value: 0x7f040009
 			public const int txtConvertedTemp = 2130968585;
 			
+			// aapt resource value: 0x7f040010
+			public const int txtConvertedWeight = 2130968592;
+			
 			// aapt resource value: 0x7f040005
 			public const int txtTemp = 2130968581;
+			
+			// aapt resource value: 0x7f04000f
+			public const int txtWeightCups = 2130968591;
+			
+			// aapt resource value: 0x7f04000d
+			public const int txtWeightGrams = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int txtWeightOz = 2130968590;
 			
 			static Id()
 			{
@@ -98,6 +113,9 @@ namespace MobileApp_Assignment
 			
 			// aapt resource value: 0x7f020001
 			public const int TempConversion = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int WeightConversion = 2130837506;
 			
 			static Layout()
 			{
@@ -120,6 +138,9 @@ namespace MobileApp_Assignment
 			
 			// aapt resource value: 0x7f030002
 			public const int temp = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int weight = 2130903043;
 			
 			static String()
 			{
