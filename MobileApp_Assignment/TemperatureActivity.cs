@@ -17,13 +17,27 @@ namespace MobileApp_Assignment
     {
         double Temperature;
         RadioButton Celcius, Fahrenheit;
-
+        Button ConvertT;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-         
+            SetContentView(Resource.Layout.TempConversion);
+
+            //FindViewById<RadioButton>(Resource.Id.rbtnCel).Selected = Celcius;
+
+            //FindViewById<Button>(Resource.Id.btnConvertTemp).Click += btnConvertTemp_Clicked;
+          
+
+
+
         }
+
+        //private void btnConvertTemp_Clicked(object sender, EventArgs e)
+        //{
+        //    if()
+        
+        //}
     }
 }
