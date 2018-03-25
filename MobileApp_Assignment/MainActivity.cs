@@ -8,6 +8,9 @@ namespace MobileApp_Assignment
     [Activity(Label = "MobileApp_Assignment", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        Button btnConvertTemp;
+        Button btnConvertWeight;
+        Button btnRecipes;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -15,12 +18,20 @@ namespace MobileApp_Assignment
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Button btnTemp = FindViewById<Button>(Resource.Id.btnConvertTemp);
+            btnConvertTemp= FindViewById<Button>(Resource.Id.btnConvertTemperature);
+            btnConvertWeight = FindViewById<Button>(Resource.Id.btnConvertWeight);
+            btnRecipes= FindViewById<Button>(Resource.Id.btnRecipes);
 
-            btnTemp.Click += (object sender, System.EventArgs e) =>
+
+            btnConvertTemp.Click += BtnConvertTemp_Click;
+
+
+        }
+
+        private void BtnConvertTemp_Click(object sender, System.EventArgs e)
         {
-            //to be done after activity
-        };
+            Intent resetIntent = new Intent(this, typeof(TemperatureActivity));
+            StartActivityForResult(resetIntent,100); 
         }
     }
 }

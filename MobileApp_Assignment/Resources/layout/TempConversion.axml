@@ -39,11 +39,16 @@
     </RadioGroup>
     <TextView
         android:id="@+id/txtConvertedTemp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:hint="test"
+        android:gravity="center" />
     <LinearLayout
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

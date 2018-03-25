@@ -44,14 +44,17 @@ namespace MobileApp_Assignment
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f04000a
+			public const int btnConvertTemp = 2130968586;
+			
 			// aapt resource value: 0x7f040001
-			public const int btnConvertTemp = 2130968577;
+			public const int btnConvertTemperature = 2130968577;
 			
 			// aapt resource value: 0x7f040002
 			public const int btnConvertWeight = 2130968578;
 			
-			// aapt resource value: 0x7f04000a
-			public const int btnHome = 2130968586;
+			// aapt resource value: 0x7f04000b
+			public const int btnHome = 2130968587;
 			
 			// aapt resource value: 0x7f040003
 			public const int btnRecipes = 2130968579;

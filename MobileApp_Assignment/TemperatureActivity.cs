@@ -18,6 +18,8 @@ namespace MobileApp_Assignment
         double Temperature;
         RadioButton Celcius, Fahrenheit;
         Button ConvertT;
+        EditText TempTxt;
+        TextView TempConversion;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,19 +27,56 @@ namespace MobileApp_Assignment
 
             SetContentView(Resource.Layout.TempConversion);
 
-            //FindViewById<RadioButton>(Resource.Id.rbtnCel).Selected = Celcius;
+            TempTxt = FindViewById<EditText>(Resource.Id.txtTemp);
+            TempConversion = FindViewById<TextView>(Resource.Id.txtConvertedTemp);
+            Celcius = FindViewById<RadioButton>(Resource.Id.rbtnCel);
+            Fahrenheit = FindViewById<RadioButton>(Resource.Id.rbtnFah);
+            ConvertT = FindViewById<Button>(Resource.Id.btnConvertTemp);
 
-            //FindViewById<Button>(Resource.Id.btnConvertTemp).Click += btnConvertTemp_Clicked;
-          
+            TempConversion.Text = "";
 
+            ConvertT.Click += ConvertT_Click;
 
 
         }
 
-        //private void btnConvertTemp_Clicked(object sender, EventArgs e)
-        //{
-        //    if()
-        
-        //}
+        private void ConvertT_Click(object sender, EventArgs e)
+        {
+            if (Celcius.Selected)
+            {
+                if (double.TryParse(TempTxt.Text, out double TemperatureF))
+                {
+                    Temperature = (TemperatureF - 32) * 5 / 9;
+
+                    
+                }
+                else
+                {
+                    Toast toastMsg = Toast.MakeText(this,
+                                                $"Error--{TempTxt.Text} is not a valid value. Please try again.",
+                                                ToastLength.Long);
+                    toastMsg.Show();
+                }
+            }//end celcius conversion
+
+            if (Fahrenheit.Selected)
+            {
+                if (double.TryParse(TempTxt.Text, out double TemperatureC))
+                {
+                    Temperature = TemperatureC * 9 / 5 + 32;
+
+                }
+                else
+                {
+                    Toast toastMsg = Toast.MakeText(this,
+                                                $"Error--{TempTxt.Text} is not a valid value. Please try again.",
+                                                ToastLength.Long);
+                    toastMsg.Show();
+                }
+            }
+
+            TempConversion.Text = Temperature.ToString();
+
+        }
     }
 }
