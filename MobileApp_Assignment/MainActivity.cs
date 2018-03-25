@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace MobileApp_Assignment
 {
@@ -13,6 +14,13 @@ namespace MobileApp_Assignment
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            Button btnTemp = FindViewById<Button>(Resource.Id.btnConvertTemp);
+
+            btnTemp.Click += (object sender, System.EventArgs e) =>
+        {
+            Intent  = new Intent(this, typeof(CSharpKeywordsActivity));
+            StartActivity(CSharpKeywordsIntent);
         }
     }
 }
