@@ -19,8 +19,8 @@ namespace MobileApp_Assignment
 
             btnTemp.Click += (object sender, System.EventArgs e) =>
         {
-            Intent  = new Intent(this, typeof(CSharpKeywordsActivity));
-            StartActivity(CSharpKeywordsIntent);
+            //to be done after activity
+        };
         }
     }
 }

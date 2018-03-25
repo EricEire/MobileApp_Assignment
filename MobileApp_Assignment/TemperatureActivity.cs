@@ -23,7 +23,7 @@ namespace MobileApp_Assignment
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+         
         }
     }
 }

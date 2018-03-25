@@ -14,12 +14,15 @@ namespace MobileApp_Assignment.Adapters
 {
     class TempConversionAdapter : BaseAdapter
     {
+        
+        Context Context;
+        public double temp { get; }
+        RadioButton c, f;
 
-        Context context;
-
-        public TempConversionAdapter(Context context)
+        public TempConversionAdapter(double t,RadioButton c, RadioButton f,Context context)
         {
-            this.context = context;
+            temp = t;
+            Context = context;
         }
 
 
@@ -38,23 +41,24 @@ namespace MobileApp_Assignment.Adapters
             var view = convertView;
             TempConversionAdapterViewHolder holder = null;
 
-            if (view != null)
-                holder = view.Tag as TempConversionAdapterViewHolder;
-
-            if (holder == null)
+           
+            if (view == null)
             {
-                holder = new TempConversionAdapterViewHolder();
-                var inflater = context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
-                //replace with your item and your holder items
-                //comment back in
-                //view = inflater.Inflate(Resource.Layout.item, parent, false);
-                //holder.Title = view.FindViewById<TextView>(Resource.Id.text);
+                var inflater = Context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
+                view = inflater.Inflate(Resource.Layout.TempConversion, parent, false);
+
+                
+                var txtTemperature = view.FindViewById<EditText>(Resource.Id.txtTemp);
+                
+                holder = new TempConversionAdapterViewHolder(txtTemperature);
+
                 view.Tag = holder;
             }
 
-
-            //fill in your items
-            //holder.Title.Text = "new text here";
+            //holder = view.Tag as CSharpKeywordAdapterViewHolder;
+            //holder.imgCSharpLogo.SetImageResource(Resource.Drawable.csharp);
+            //holder.lblCSharpKeyword.Text = CSharpKeywords[position].Keyword;
+            //holder.lblCSharpKeywordDefinition.Text = CSharpKeywords[position].Definition;
 
             return view;
         }
@@ -73,6 +77,12 @@ namespace MobileApp_Assignment.Adapters
     class TempConversionAdapterViewHolder : Java.Lang.Object
     {
         //Your adapter views to re-use
-        //public TextView Title { get; set; }
+
+        public EditText Temp { get; }
+
+        public TempConversionAdapterViewHolder(EditText txtTemperature)
+        {
+            txtTemperature.Text = Temp.Text;
+        }
     }
 }

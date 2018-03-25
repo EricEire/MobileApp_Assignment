@@ -10,10 +10,15 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace MobileApp_Assignment.DataAccess
+namespace MobileApp_Assignment
 {
-    class FTemperature
+    class Temperature
     {
-        public double FTemp { get; set; }
+        public double Temp { get; set; }
+
+        public Temperature(double t)
+        {
+            Temp = t;
+        }
     }
 }
