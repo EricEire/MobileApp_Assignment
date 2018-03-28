@@ -46,9 +46,9 @@ namespace MobileApp_Assignment.Adapters
                 view = inflater.Inflate(Resource.Layout.TempConversion, parent, false);
 
 
-                var txtTemperature = view.FindViewById<EditText>(Resource.Id.txtTemp);
+                var txtTemperature = view.FindViewById<EditText>(Resource.Id.txtWeight);
 
-                holder = new TempConversionAdapterViewHolder(txtTemperature);
+                holder = new WeightConversionAdapterViewHolder(txtWeight);
 
                 view.Tag = holder;
             }
@@ -76,5 +76,12 @@ namespace MobileApp_Assignment.Adapters
     {
         //Your adapter views to re-use
         //public TextView Title { get; set; }
+
+        public EditText Weight { get; }
+
+        public WeightConversionAdapterViewHolder(EditText txtWeight)
+        {
+            txtWeight.Text = Weight.Text;
+        }
     }
 }

@@ -4,4 +4,15 @@
   <string name="home">Home</string>
   <string name="temp">Temperature Conversion</string>
   <string name="weight">Weight Conversion</string>
+  <string name="weight_promt">Enter weight/measure here</string>
+  <string-array name="weight_array">
+    <item>Grams to Ounces</item>
+    <item>Ounces to Grams</item>
+    <item>Ml to Fluid Ounces</item>
+    <item>ML to Cups</item>
+    <item>Fluid Ounces to Ml</item>
+    <item>Fluid Ounces to Cups</item>
+    <item>Cups to Ml</item>
+    <item>Cups to Fluid Ounces</item>
+  </string-array>
 </resources>

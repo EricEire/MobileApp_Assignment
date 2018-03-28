@@ -4,39 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="2">
-    <TextView
-        android:id="@+id/lblWeightConversion"
-        android:text="@string/weight"
-        android:layout_width="wrap_content"
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:prompt="@string/planet_prompt"
+    />
+  <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:typeface="serif"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:padding="10dp" />
-    <EditText
-        android:id="@+id/txtWeightGrams"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:hint="Enter Grams here"
-        android:textStyle="bold"
-        android:gravity="center" />
-    <EditText
-        android:id="@+id/txtWeightOz"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:hint="Enter Ounces here"
-        android:textStyle="bold"
-        android:gravity="center" />
-    <EditText
-        android:id="@+id/txtWeightCups"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:hint="Enter Cups here"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:prompt="@string/weight_prompt"
+    />
     <TextView
         android:id="@+id/txtConvertedWeight"
         android:layout_width="match_parent"
