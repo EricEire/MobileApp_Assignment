@@ -68,76 +68,83 @@ namespace MobileApp_Assignment
 
             switch (choice)
             {
-                //Grams to ounces
+
+                //No choice made
                 case 0:
+                    string toast= string.Format("Please choose a conversion method from the list");
+                    Toast.MakeText(this, toast, ToastLength.Long).Show();
+
+                    break;
+                //Grams to ounces
+                case 1:
                     if (double.TryParse(WeightTxt.Text, out w))
                          {
                     conversion=  w / 28.34952;
-                    ConvertedWeightTxt.Text = $"{conversion.ToString()} Ounces";
+                    ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} Ounces";
                     };
                     break;
                     
 
                 //Ounces to grams
-                case 1:
+                case 2:
                     if (double.TryParse(WeightTxt.Text, out w))
                         {
                         conversion = w * 28.34952;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} Grams";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} Grams";
                         };
                     break;
 
                 //Ml to fl Oz
-                case 2:
+                case 3:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w * 0.0338;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} fluid Ounces";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} fluid Ounces";
                     };
                     break;
 
                 //ml to cups
-                case 3:
+                case 4:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w * 0.004227;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} cups";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} cups";
                     };
                     break;
 
                     //fl oz to ml
-                case 4:
+                case 5:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w * 29.573;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} Millilitres";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} Millilitres";
                     };
                     break;
 
                 //fl oz to cups
-                case 5:
+                case 6:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w * 0.12500;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} cups";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} cups";
                     };
                     break;
 
                 //cups to ml
-                case 6:
+                case 7:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w / 0.0042268;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} Millilitres";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} Millilitres";
                     };
                     break;
 
                 //Cups to fl Oz
-                case 7:
+                case 8:
                     if (double.TryParse(WeightTxt.Text, out w))
                     {
                         conversion = w / 8;
-                        ConvertedWeightTxt.Text = $"{conversion.ToString()} Millilitres";
+                        ConvertedWeightTxt.Text = $"{conversion.ToString("n2")} fluid ounces";
                     };
                     break;
 

@@ -6,6 +6,7 @@
   <string name="weight">Weight Conversion</string>
   <string name="weight_promt">Choose conversion</string>
   <string-array name="weight_array">
+    <item>Choose conversion method</item>
     <item>Grams to Ounces</item>
     <item>Ounces to Grams</item>
     <item>Millilitres to Fluid Ounces</item>

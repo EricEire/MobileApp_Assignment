@@ -59,7 +59,7 @@ namespace MobileApp_Assignment
 
                 Temperature = (TemperatureInput - 32) * 5 / 9;
 
-                TemperatureOutput = Temperature.ToString();
+                TemperatureOutput = Temperature.ToString("n2");
 
                 TempConversion.Text = $"{TemperatureOutput} C";
 
@@ -68,7 +68,7 @@ namespace MobileApp_Assignment
             {
                 Temperature = TemperatureInput * 9 / 5 + 32;
 
-                TemperatureOutput = Temperature.ToString();
+                TemperatureOutput = Temperature.ToString("n2");
 
                 TempConversion.Text = $"{TemperatureOutput} F";
 

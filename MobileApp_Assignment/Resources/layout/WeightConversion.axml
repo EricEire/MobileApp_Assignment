@@ -47,14 +47,10 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:text="Convert"
-            android:id="@+id/btnConvertWeight" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_weight="0.25"
             android:text="Home"
-            android:id="@+id/btnHome" />
+            android:id="@+id/btnHome"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp" />
     </LinearLayout>
 </LinearLayout>
