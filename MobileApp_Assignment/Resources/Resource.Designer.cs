@@ -28,6 +28,22 @@ namespace MobileApp_Assignment
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int weight_array = 2130968576;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -44,56 +60,53 @@ namespace MobileApp_Assignment
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f04000a
-			public const int btnConvertTemp = 2130968586;
+			// aapt resource value: 0x7f05000a
+			public const int btnConvertTemp = 2131034122;
 			
-			// aapt resource value: 0x7f040001
-			public const int btnConvertTemperature = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int btnConvertTemperature = 2131034113;
 			
-			// aapt resource value: 0x7f040002
-			public const int btnConvertWeight = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int btnConvertWeight = 2131034114;
 			
-			// aapt resource value: 0x7f04000b
-			public const int btnHome = 2130968587;
+			// aapt resource value: 0x7f05000b
+			public const int btnHome = 2131034123;
 			
-			// aapt resource value: 0x7f040003
-			public const int btnRecipes = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int btnRecipes = 2131034115;
 			
-			// aapt resource value: 0x7f040000
-			public const int lblHome = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int lblHome = 2131034112;
 			
-			// aapt resource value: 0x7f040004
-			public const int lblTempConversion = 2130968580;
+			// aapt resource value: 0x7f050004
+			public const int lblTempConversion = 2131034116;
 			
-			// aapt resource value: 0x7f04000c
-			public const int lblWeightConversion = 2130968588;
+			// aapt resource value: 0x7f05000c
+			public const int lblWeightConversion = 2131034124;
 			
-			// aapt resource value: 0x7f040006
-			public const int radioGroupTemps = 2130968582;
+			// aapt resource value: 0x7f050006
+			public const int radioGroupTemps = 2131034118;
 			
-			// aapt resource value: 0x7f040007
-			public const int rbtnCel = 2130968583;
+			// aapt resource value: 0x7f050007
+			public const int rbtnCel = 2131034119;
 			
-			// aapt resource value: 0x7f040008
-			public const int rbtnFah = 2130968584;
+			// aapt resource value: 0x7f050008
+			public const int rbtnFah = 2131034120;
 			
-			// aapt resource value: 0x7f040009
-			public const int txtConvertedTemp = 2130968585;
+			// aapt resource value: 0x7f05000e
+			public const int spinner = 2131034126;
 			
-			// aapt resource value: 0x7f040010
-			public const int txtConvertedWeight = 2130968592;
+			// aapt resource value: 0x7f050009
+			public const int txtConvertedTemp = 2131034121;
 			
-			// aapt resource value: 0x7f040005
-			public const int txtTemp = 2130968581;
+			// aapt resource value: 0x7f05000f
+			public const int txtConvertedWeight = 2131034127;
 			
-			// aapt resource value: 0x7f04000f
-			public const int txtWeightCups = 2130968591;
+			// aapt resource value: 0x7f050005
+			public const int txtTemp = 2131034117;
 			
-			// aapt resource value: 0x7f04000d
-			public const int txtWeightGrams = 2130968589;
-			
-			// aapt resource value: 0x7f04000e
-			public const int txtWeightOz = 2130968590;
+			// aapt resource value: 0x7f05000d
+			public const int txtWeight = 2131034125;
 			
 			static Id()
 			{
@@ -141,6 +154,9 @@ namespace MobileApp_Assignment
 			
 			// aapt resource value: 0x7f030003
 			public const int weight = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int weight_promt = 2130903044;
 			
 			static String()
 			{

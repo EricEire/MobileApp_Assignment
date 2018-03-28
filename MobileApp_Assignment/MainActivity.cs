@@ -24,8 +24,15 @@ namespace MobileApp_Assignment
 
 
             btnConvertTemp.Click += BtnConvertTemp_Click;
+            btnConvertWeight.Click += BtnConvertWeight_Click;
 
 
+        }
+
+        private void BtnConvertWeight_Click(object sender, System.EventArgs e)
+        {
+            Intent resetIntent = new Intent(this, typeof(WeightConversionActivity));
+            StartActivityForResult(resetIntent, 99);
         }
 
         private void BtnConvertTemp_Click(object sender, System.EventArgs e)

@@ -4,25 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="2">
-  <Spinner
-      android:id="@+id/spinner"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:prompt="@string/planet_prompt"
-    />
-  <Spinner
+    <TextView
+        android:id="@+id/lblWeightConversion"
+        android:text="@string/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:hint="Enter Weight/Measure here"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/weight_promt" />
+    <Spinner
         android:id="@+id/spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:prompt="@string/weight_prompt"
-    />
+        android:prompt="@string/weight_promt"
+        android:layout_weight="0.5" />
     <TextView
         android:id="@+id/txtConvertedWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_weight="0.5" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

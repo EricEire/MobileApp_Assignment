@@ -46,7 +46,7 @@ namespace MobileApp_Assignment.Adapters
                 view = inflater.Inflate(Resource.Layout.TempConversion, parent, false);
 
 
-                var txtTemperature = view.FindViewById<EditText>(Resource.Id.txtWeight);
+                var txtWeight = view.FindViewById<EditText>(Resource.Id.txtWeight);
 
                 holder = new WeightConversionAdapterViewHolder(txtWeight);
 
