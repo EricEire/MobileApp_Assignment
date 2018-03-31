@@ -2,17 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#67FCFF">
+    android:background="#C9FFF7">
     <TextView
         android:id="@+id/lblHome"
         android:text="@string/home"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:typeface="serif"
         android:textSize="25dp"
         android:textStyle="bold"
         android:padding="10dp"
-        android:layout_centerHorizontal="true" />
+        android:gravity="center_horizontal"
+        android:background="#ABB6E8" />
     <Button
         android:id="@+id/btnConvertTemperature"
         android:text="Convert Temperatures"
@@ -20,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/lblHome"
-        android:layout_marginTop="10dp"
-        android:background="#CC05AA"
+        android:layout_marginTop="35dp"
+        android:background="#FFDFC9"
         android:padding="10dp" />
     <Button
         android:id="@+id/btnConvertWeight"
@@ -30,8 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnConvertTemperature"
-        android:layout_marginTop="10dp"
-        android:background="#CC05AA"
+        android:layout_marginTop="35dp"
+        android:background="#FFDFC9"
         android:padding="10dp" />
     <Button
         android:id="@+id/btnRecipes"
@@ -40,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnConvertWeight"
-        android:layout_marginTop="10dp"
-        android:background="#CC05AA"
+        android:layout_marginTop="35dp"
+        android:background="#FFDFC9"
         android:padding="10dp" />
 </RelativeLayout>
