@@ -105,7 +105,7 @@ namespace MobileApp_Assignment.DataAccess
             {
                 using (SQLiteConnection cxn = new SQLiteConnection(DBstore.DBLocation))
                 {
-                    IEnumerable<Recipe> recipes = cxn.Query<Recipe>("SELECT * FROM Recipes");
+                    IEnumerable<Recipe> recipes = cxn.Query<Recipe>("SELECT * FROM Recipe");
 
                     return recipes;
                 }
