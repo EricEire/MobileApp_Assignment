@@ -76,8 +76,8 @@ namespace MobileApp_Assignment
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06000e
-			public const int btnConvertTemp = 2131099662;
+			// aapt resource value: 0x7f060011
+			public const int btnConvertTemp = 2131099665;
 			
 			// aapt resource value: 0x7f060001
 			public const int btnConvertTemperature = 2131099649;
@@ -85,56 +85,65 @@ namespace MobileApp_Assignment
 			// aapt resource value: 0x7f060002
 			public const int btnConvertWeight = 2131099650;
 			
-			// aapt resource value: 0x7f06000f
-			public const int btnHome = 2131099663;
+			// aapt resource value: 0x7f060012
+			public const int btnHome = 2131099666;
 			
 			// aapt resource value: 0x7f060003
 			public const int btnRecipes = 2131099651;
 			
-			// aapt resource value: 0x7f060005
-			public const int imgRecipe = 2131099653;
+			// aapt resource value: 0x7f060008
+			public const int imgRecipe = 2131099656;
 			
 			// aapt resource value: 0x7f060000
 			public const int lblHome = 2131099648;
 			
-			// aapt resource value: 0x7f060007
-			public const int lblRecipeDescription = 2131099655;
-			
-			// aapt resource value: 0x7f060006
-			public const int lblRecipeTitle = 2131099654;
-			
-			// aapt resource value: 0x7f060008
-			public const int lblTempConversion = 2131099656;
-			
-			// aapt resource value: 0x7f060010
-			public const int lblWeightConversion = 2131099664;
-			
-			// aapt resource value: 0x7f060004
-			public const int lvRecipes = 2131099652;
+			// aapt resource value: 0x7f060005
+			public const int lblIngredients = 2131099653;
 			
 			// aapt resource value: 0x7f06000a
-			public const int radioGroupTemps = 2131099658;
-			
-			// aapt resource value: 0x7f06000b
-			public const int rbtnCel = 2131099659;
-			
-			// aapt resource value: 0x7f06000c
-			public const int rbtnFah = 2131099660;
-			
-			// aapt resource value: 0x7f060012
-			public const int spinner = 2131099666;
-			
-			// aapt resource value: 0x7f06000d
-			public const int txtConvertedTemp = 2131099661;
-			
-			// aapt resource value: 0x7f060013
-			public const int txtConvertedWeight = 2131099667;
+			public const int lblRecipeDescription = 2131099658;
 			
 			// aapt resource value: 0x7f060009
-			public const int txtTemp = 2131099657;
+			public const int lblRecipeTitle = 2131099657;
 			
-			// aapt resource value: 0x7f060011
-			public const int txtWeight = 2131099665;
+			// aapt resource value: 0x7f060006
+			public const int lblSteps = 2131099654;
+			
+			// aapt resource value: 0x7f06000b
+			public const int lblTempConversion = 2131099659;
+			
+			// aapt resource value: 0x7f060004
+			public const int lblTitle = 2131099652;
+			
+			// aapt resource value: 0x7f060013
+			public const int lblWeightConversion = 2131099667;
+			
+			// aapt resource value: 0x7f060007
+			public const int lvRecipes = 2131099655;
+			
+			// aapt resource value: 0x7f06000d
+			public const int radioGroupTemps = 2131099661;
+			
+			// aapt resource value: 0x7f06000e
+			public const int rbtnCel = 2131099662;
+			
+			// aapt resource value: 0x7f06000f
+			public const int rbtnFah = 2131099663;
+			
+			// aapt resource value: 0x7f060015
+			public const int spinner = 2131099669;
+			
+			// aapt resource value: 0x7f060010
+			public const int txtConvertedTemp = 2131099664;
+			
+			// aapt resource value: 0x7f060016
+			public const int txtConvertedWeight = 2131099670;
+			
+			// aapt resource value: 0x7f06000c
+			public const int txtTemp = 2131099660;
+			
+			// aapt resource value: 0x7f060014
+			public const int txtWeight = 2131099668;
 			
 			static Id()
 			{
@@ -153,16 +162,19 @@ namespace MobileApp_Assignment
 			public const int Main = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int RecipeLV = 2130903041;
+			public const int RecipeDlgFrg = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int RecipeRow = 2130903042;
+			public const int RecipeLV = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int TempConversion = 2130903043;
+			public const int RecipeRow = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int WeightConversion = 2130903044;
+			public const int TempConversion = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int WeightConversion = 2130903045;
 			
 			static Layout()
 			{

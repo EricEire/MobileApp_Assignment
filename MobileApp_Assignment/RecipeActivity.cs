@@ -32,14 +32,19 @@ namespace MobileApp_Assignment
 
             LVrecipes.Adapter = new RecipeAdapter(this, Recipes);
 
+            LVrecipes.ItemClick += LVrecipes_ItemClick;
+        }
 
-            //DBstore dbStore = new DBstore();
+        private void LVrecipes_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            int rowClicked = e.Position;
 
-            //IEnumerable<Recipe> recipes = dbStore.GetRecipes();
-            //Recipes = recipes.ToList();
-
-            //ListAdapter = new RecipeAdapter(recipes, this);
-
+            FragmentTransaction txn = FragmentManager.BeginTransaction();
+            var recipeData = new Bundle();
+            recipeData.PutInt("RecipeTitle", rowClicked);
+            recipeData.PutString("RecipeIngredients", Recipes[rowClicked].RecipeIngredients);
+            recipeData.PutString("RecipeSteps", Recipes[rowClicked].RecipeSteps);
+            RecipeDlgFrg editKeywordDlgFrg = new RecipeDlgFrg() { Arguments = recipeData };
         }
 
         private void FetchRecipes()

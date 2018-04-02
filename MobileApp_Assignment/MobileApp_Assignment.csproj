@@ -61,6 +61,7 @@
     <Compile Include="DataAccess\Recipe.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RecipeActivity.cs" />
+    <Compile Include="RecipeDlgFrg.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataAccess\SQLite.cs" />
@@ -86,6 +87,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\RecipeRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RecipeDlgFrg.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
