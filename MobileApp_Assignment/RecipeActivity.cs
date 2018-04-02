@@ -28,14 +28,15 @@ namespace MobileApp_Assignment
             SetContentView(Resource.Layout.RecipeLV);
             LVrecipes = FindViewById<ListView>(Resource.Id.lvRecipes);
 
-            //FetchRecipes();
+            FetchRecipes();
 
-            //LVrecipes.Adapter = new RecipeAdapter(this, Recipes);
+            LVrecipes.Adapter = new RecipeAdapter(this, Recipes);
 
-            DBstore dbStore = new DBstore();
 
-            IEnumerable<Recipe> recipes = dbStore.GetRecipes();
-            Recipes = recipes.ToList();
+            //DBstore dbStore = new DBstore();
+
+            //IEnumerable<Recipe> recipes = dbStore.GetRecipes();
+            //Recipes = recipes.ToList();
 
             //ListAdapter = new RecipeAdapter(recipes, this);
 
@@ -43,9 +44,14 @@ namespace MobileApp_Assignment
 
         private void FetchRecipes()
         {
-           DBstore.InitDB();
+            // DBstore.InitDB();
 
-            
+            Recipes.Add(new Recipe(101, "test","Tetst","test","test"));
+            Recipes.Add(new Recipe(102, "test", "Tetst", "test", "test"));
+            Recipes.Add(new Recipe(103, "test", "Tetst", "test", "test"));
+
+
+
         }
     }
 }

@@ -17,7 +17,7 @@ namespace MobileApp_Assignment.Adapters
     {
 
         Context Context;
-        List<Recipe> Recipes = new List<Recipe>();
+        public List<Recipe> Recipes { get; }
 
         public RecipeAdapter(Context context, List<Recipe> Recipes)
         {
@@ -50,16 +50,19 @@ namespace MobileApp_Assignment.Adapters
                 var Img = view.FindViewById<ImageView>(Resource.Id.imgRecipe);
                 var lblRecipeTitle = view.FindViewById<TextView>(Resource.Id.lblRecipeTitle);
                 var lblRecipeDesc = view.FindViewById<TextView>(Resource.Id.lblRecipeDescription);
-                //var lblRecipeSteps = view.FindViewById<TextView>(Resource.Id.lblRecipeSteps);
+                
                 holder = new RecipeAdapterViewHolder(Img, lblRecipeTitle, lblRecipeDesc);
 
                 view.Tag = holder;
             }
 
-            //fill in your items
-            //holder.Title.Text = "new text here";
+            holder = view.Tag as RecipeAdapterViewHolder;
+            holder.img.SetImageResource(Resource.Drawable.Brownie);
+            holder.lblRecipeTitle.Text = Recipes[position].RecipeTitle;
+            holder.lblRecipeDescription.Text = Recipes[position].RecipeDescription;
 
             return view;
+;
         }
 
         //Fill in cound here, currently 0
@@ -67,20 +70,27 @@ namespace MobileApp_Assignment.Adapters
         {
             get
             {
-                return 0;
+                return Recipes.Count;
             }
         }
 
-        public override Recipe this[int position] => throw new NotImplementedException();
+        public override Recipe this[int position]
+        {
+            get
+            {
+                return Recipes[position];
+            }
+        }
+
     }
 
     class RecipeAdapterViewHolder : Java.Lang.Object
     {
         //Your adapter views to re-use
         //public TextView Title { get; set; }
-        private ImageView img;
-        private TextView lblRecipeTitle;
-        private TextView lblRecipeDescription;
+        public ImageView img { get; }
+        public TextView lblRecipeTitle { get; }
+        public TextView lblRecipeDescription { get; }
 
         public RecipeAdapterViewHolder(ImageView img, TextView lblRecipeTitle, TextView lblRecipeDescription)
         {

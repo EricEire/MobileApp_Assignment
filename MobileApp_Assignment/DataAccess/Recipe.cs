@@ -29,6 +29,16 @@ namespace MobileApp_Assignment.DataAccess
 
         public Recipe() { }
 
+        public Recipe(int id, string title,string desc,string ingredients,string step)
+        {
+            id = RecipeID;
+            title = RecipeTitle;
+            desc = RecipeDescription;
+            ingredients = RecipeIngredients;
+            step = RecipeSteps;
+
+        }
+
         
     }
 }
