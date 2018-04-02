@@ -32,20 +32,20 @@ namespace MobileApp_Assignment
 
         private void BtnRecipes_Click(object sender, System.EventArgs e)
         {
-            Intent resetIntent = new Intent(this, typeof(RecipeActivity));
-            StartActivityForResult(resetIntent, 98);
+            Intent RecipeIntent = new Intent(this, typeof(RecipeActivity));
+            StartActivityForResult(RecipeIntent, 98);
         }
 
         private void BtnConvertWeight_Click(object sender, System.EventArgs e)
         {
-            Intent resetIntent = new Intent(this, typeof(WeightConversionActivity));
-            StartActivityForResult(resetIntent, 99);
+            Intent WeightIntent = new Intent(this, typeof(WeightConversionActivity));
+            StartActivityForResult(WeightIntent, 99);
         }
 
         private void BtnConvertTemp_Click(object sender, System.EventArgs e)
         {
-            Intent resetIntent = new Intent(this, typeof(TemperatureActivity));
-            StartActivityForResult(resetIntent,100); 
+            Intent TempIntent = new Intent(this, typeof(TemperatureActivity));
+            StartActivityForResult(TempIntent, 100); 
         }
     }
 }

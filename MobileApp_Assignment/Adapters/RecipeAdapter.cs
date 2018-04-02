@@ -16,12 +16,12 @@ namespace MobileApp_Assignment.Adapters
     class RecipeAdapter : BaseAdapter<Recipe>
     {
 
-        Context Context;
+        Context context;
         public List<Recipe> Recipes { get; }
 
         public RecipeAdapter(Context context, List<Recipe> Recipes)
         {
-            Context = context;
+            this.context = context;
             this.Recipes = Recipes;
         }
 
@@ -44,7 +44,7 @@ namespace MobileApp_Assignment.Adapters
 
             if (view == null)
             {
-                var inflater = Context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
+                var inflater = context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
                 view = inflater.Inflate(Resource.Layout.RecipeRow, parent, false);
 
                 var Img = view.FindViewById<ImageView>(Resource.Id.imgRecipe);
@@ -62,7 +62,6 @@ namespace MobileApp_Assignment.Adapters
             holder.lblRecipeDescription.Text = Recipes[position].RecipeDescription;
 
             return view;
-;
         }
 
         //Fill in cound here, currently 0
@@ -88,9 +87,9 @@ namespace MobileApp_Assignment.Adapters
     {
         //Your adapter views to re-use
         //public TextView Title { get; set; }
-        public ImageView img { get; }
-        public TextView lblRecipeTitle { get; }
-        public TextView lblRecipeDescription { get; }
+        public ImageView img { get; set; }
+        public TextView lblRecipeTitle { get; set; }
+        public TextView lblRecipeDescription { get; set; }
 
         public RecipeAdapterViewHolder(ImageView img, TextView lblRecipeTitle, TextView lblRecipeDescription)
         {

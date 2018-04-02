@@ -44,13 +44,11 @@ namespace MobileApp_Assignment
 
         private void FetchRecipes()
         {
-            // DBstore.InitDB();
+            DBstore dbStore = new DBstore();
 
-            Recipes.Add(new Recipe(101, "test","Tetst","test","test"));
-            Recipes.Add(new Recipe(102, "test", "Tetst", "test", "test"));
-            Recipes.Add(new Recipe(103, "test", "Tetst", "test", "test"));
+            IEnumerable<Recipe> recipes = dbStore.GetRecipes();
 
-
+            Recipes = recipes.ToList();
 
         }
     }
