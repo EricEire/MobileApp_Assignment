@@ -14,19 +14,19 @@ using MobileApp_Assignment.DataAccess;
 
 namespace MobileApp_Assignment
 {
-    public class EditKeywordArgs : EventArgs
-    {
-        public string title { get; }
-        public string Ing { get; }
-        public string steps { get; }
+    //public class EditKeywordArgs : EventArgs
+    //{
+    //    public string title { get; }
+    //    public string Ing { get; }
+    //    public string steps { get; }
 
-        public EditKeywordArgs(string title, string Ing, string steps)
-        {
-            this.title = title;
-            this.Ing = Ing;
-            this.steps = steps;
-        }
-    }
+    //    public EditKeywordArgs(string title, string Ing, string steps)
+    //    {
+    //        this.title = title;
+    //        this.Ing = Ing;
+    //        this.steps = steps;
+    //    }
+    //}
 
 
     public class RecipeDlgFrg : DialogFragment
@@ -34,7 +34,7 @@ namespace MobileApp_Assignment
         TextView Title;
         TextView Ingredients;
         TextView Steps;
-        List<Recipe> Recipes = new List<Recipe>();
+        //List<Recipe> Recipes = new List<Recipe>();
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -53,13 +53,13 @@ namespace MobileApp_Assignment
             var RecipeDlgFrgView = inflater.Inflate(Resource.Layout.RecipeDlgFrg, container, false);
 
             Title = RecipeDlgFrgView.FindViewById<TextView>(Resource.Id.lblTitle);
-            Title.Text = Arguments.GetString("RecipeTitle", "ERROR!!!");
+            Title.Text = Arguments.GetString("RecipeTitle");
 
             Ingredients = RecipeDlgFrgView.FindViewById<TextView>(Resource.Id.lblIngredients);
-            Ingredients.Text = Arguments.GetString("RecipeIngredients", "ERROR!!!");
+            Ingredients.Text = Arguments.GetString("RecipeIngredients");
 
             Steps = RecipeDlgFrgView.FindViewById<TextView>(Resource.Id.lblSteps);
-            Steps.Text = Arguments.GetString("RecipeSteps", "ERROR!!!");
+            Steps.Text = Arguments.GetString("RecipeSteps");
 
 
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);

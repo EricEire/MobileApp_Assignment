@@ -41,10 +41,13 @@ namespace MobileApp_Assignment
 
             FragmentTransaction txn = FragmentManager.BeginTransaction();
             var recipeData = new Bundle();
-            recipeData.PutInt("RecipeTitle", rowClicked);
+            recipeData.PutInt("RecipeID", rowClicked);
+            recipeData.PutString("RecipeTitle", Recipes[rowClicked].RecipeTitle);
             recipeData.PutString("RecipeIngredients", Recipes[rowClicked].RecipeIngredients);
             recipeData.PutString("RecipeSteps", Recipes[rowClicked].RecipeSteps);
-            RecipeDlgFrg editKeywordDlgFrg = new RecipeDlgFrg() { Arguments = recipeData };
+            RecipeDlgFrg recipeDlgFrg = new RecipeDlgFrg() { Arguments = recipeData };
+
+            recipeDlgFrg.Show(txn,"Recipe");
         }
 
         private void FetchRecipes()

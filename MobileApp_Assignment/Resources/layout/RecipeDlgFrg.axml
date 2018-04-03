@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="4">
-    <TextView
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:gravity="center_horizontal"
-        android:text="Title"
-        android:textStyle="bold|italic"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/lblTitle" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Ingredients"
-        android:textStyle="bold|italic"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/lblIngredients" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:text="Steps"
-        android:textStyle="bold|italic"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/lblSteps" />
-</LinearLayout>
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Title"
+            android:textStyle="bold|italic"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/lblTitle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textStyle="bold|italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/lblIngredients"
+            android:background="#FFDFC9" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steps"
+            android:textStyle="bold|italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/lblSteps"
+            android:background="#C9FFF7" />
+    </LinearLayout>
+</ScrollView>
