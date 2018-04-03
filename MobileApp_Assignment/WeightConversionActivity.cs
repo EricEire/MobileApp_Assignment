@@ -28,6 +28,7 @@ namespace MobileApp_Assignment
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Window.RequestFeature(WindowFeatures.NoTitle);
 
             // Create your application here
 

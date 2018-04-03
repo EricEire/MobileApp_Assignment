@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9FFF7">
+    android:background="@drawable/bakinghp">
     <TextView
         android:id="@+id/lblHome"
         android:text="@string/home"
@@ -12,8 +12,7 @@
         android:textSize="25dp"
         android:textStyle="bold"
         android:padding="10dp"
-        android:gravity="center_horizontal"
-        android:background="#ABB6E8" />
+        android:gravity="center_horizontal" />
     <Button
         android:id="@+id/btnConvertTemperature"
         android:text="Convert Temperatures"
@@ -22,7 +21,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/lblHome"
         android:layout_marginTop="35dp"
-        android:background="#FFDFC9"
+        android:background="#ffffcc"
+        android:textColor="@android:color/black"
         android:padding="10dp" />
     <Button
         android:id="@+id/btnConvertWeight"
@@ -32,7 +32,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnConvertTemperature"
         android:layout_marginTop="35dp"
-        android:background="#FFDFC9"
+        android:background="#ffffcc"
+        android:textColor="@android:color/black"
         android:padding="10dp" />
     <Button
         android:id="@+id/btnRecipes"
@@ -42,6 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnConvertWeight"
         android:layout_marginTop="35dp"
-        android:background="#FFDFC9"
+        android:background="#ffffcc"
+        android:textColor="@android:color/black"
         android:padding="10dp" />
 </RelativeLayout>

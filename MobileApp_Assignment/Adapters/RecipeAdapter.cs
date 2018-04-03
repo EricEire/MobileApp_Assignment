@@ -57,7 +57,7 @@ namespace MobileApp_Assignment.Adapters
             }
 
             holder = view.Tag as RecipeAdapterViewHolder;
-            holder.img.SetImageResource(Resource.Drawable.Brownie);
+            holder.img.SetImageResource(Resource.Drawable.Cupcake1);
             holder.lblRecipeTitle.Text = Recipes[position].RecipeTitle;
             holder.lblRecipeDescription.Text = Recipes[position].RecipeDescription;
 

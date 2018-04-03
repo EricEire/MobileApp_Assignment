@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using Android.Views;
 
 namespace MobileApp_Assignment
 {
@@ -14,6 +15,7 @@ namespace MobileApp_Assignment
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Window.RequestFeature(WindowFeatures.NoTitle);
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);

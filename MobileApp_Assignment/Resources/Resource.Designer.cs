@@ -61,7 +61,19 @@ namespace MobileApp_Assignment
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Brownie = 2130837504;
+			public const int BakingHP = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Brownie = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Cupcake1 = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int TempBg = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Weightbg = 2130837508;
 			
 			static Drawable()
 			{
@@ -117,6 +129,9 @@ namespace MobileApp_Assignment
 			
 			// aapt resource value: 0x7f060014
 			public const int lblWeightConversion = 2131099668;
+			
+			// aapt resource value: 0x7f060018
+			public const int linearLayout2 = 2131099672;
 			
 			// aapt resource value: 0x7f060008
 			public const int lvRecipes = 2131099656;
