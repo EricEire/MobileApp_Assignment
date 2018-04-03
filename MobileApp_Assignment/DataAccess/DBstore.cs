@@ -51,6 +51,7 @@ namespace MobileApp_Assignment.DataAccess
                     TableQuery<Recipe> query = cxn.Table<Recipe>();
                     if (query.Count() == 0)
                     {
+                        //\n\t\u2022 created a new line with a bullet point
                         Recipe NutellaBrownies = new Recipe()
                         {
                             RecipeID = 101,
@@ -83,9 +84,30 @@ namespace MobileApp_Assignment.DataAccess
                             RecipeSteps = "\t\u2022Line two baking sheets with parchment paper and set aside. \n\t\u2022Place half the butter (8 tablespoons) in a medium skillet.\n\t\u2022 Melt the butter over medium heat, swirling it in the pan occasionally. It’ll foam and froth as it cooks, and start to crackle and pop. Once the crackling stops, keep a close eye on the melted butter, continuing to swirl the pan often. The butter will start to smell nutty, and brown bits will form in the bottom. Once the bits are amber brown (about 2 1/2 to 3 minutes or so after the sizzling stops), remove the butter from the burner and immediately pour it into a small bowl, bits and all. This will stop the butter from cooking and burning.  Allow it to cool for 20 minutes. \n\t\u2022Beat the remaining 1/2 cup butter with the brown sugar for 3 to 5 minutes, until the mixture is very smooth. \n\t\u2022Beat in the vanilla extract and brown sugar. \n\t\u2022Pour the cooled brown butter into the bowl, along with the granulated sugar. \n\t\u2022Beat for 2 minutes, until smooth; the mixture will lighten in color and become fluffy. \n\t\u2022Add the egg and egg yolk, and beat for one minute more. \t\u2022Add the flour, salt, and baking soda, beating on low speed just until everything is incorporated. \n\t\u2022Use a spatula to fold in the chocolate chips and pecans and finish incorporating all of the dry flour bits into the dough. \t\u2022Scoop the dough onto a piece of parchment paper, waxed paper, or plastic wrap. \n\t\u2022Flatten it slightly into a thick disk, and refrigerate for at least 30 minutes. \t\u2022About 15 minutes before you’re ready to begin baking, place racks in the center and upper third of the oven and preheat your oven to 350°F. \n\t\u2022Scoop the dough in 2 tablespoon-sized balls onto the prepared baking sheets. Leave about 2″ between the cookies; they’ll spread as they bake. \t\u2022Bake the cookies for 12 to 15 minutes, until they’re golden brown. \n\t\u2022Remove them from the oven, and allow them to rest on the baking sheet for at least 5 minutes before moving them. \n\nOptional: Sprinkle with Sea Salt"
                         };
 
+                        Recipe ApplePie = new Recipe()
+                        {
+                            RecipeID = 103,
+
+                            RecipeTitle = "Apple Pie",
+
+                            RecipeDescription = "An apple a day keeps the doctor away",
+
+                            RecipeIngredients = "1kg Bramley Apples \n140g Golden Caster Sugar \n0.5 tsp cinnamon \n3tbsp flour  \nPastry(Store bought is fine)",
+
+                            RecipeSteps = "\t\u2022Put a layer of paper towels on a large baking sheet. Quarter, core, peel and slice the apples about 5mm thick and lay evenly on the baking sheet. Put paper towels on top and set aside while you chill the pastry. " +
+                            "\n\t\u2022Mix the 140g/5oz sugar, the cinnamon and flour for the filling in a large bowl(We need to add the apples also!) " +
+                            "\n\t\u2022After the pastry has chilled, heat the oven to 190C/fan 170C/gas 5. " +
+                            "Lightly beat the egg white with a fork. Cut off a third of the pastry and keep it wrapped while you roll out the rest, and use this to line a pie tin – 20-22cm round and 4cm deep – leaving a slight overhang. " +
+                            "Roll the remaining third to a circle about 28cm in diameter. \n\t\u2022Pat the apples dry with kitchen paper, and tip them into the bowl with the cinnamon-sugar mix. Give a quick mix with your hands and immediately pile high into the pastry-lined tin. " +
+                            "\n\t\u2022Brush a little water around the pastry rim and lay the pastry lid over the apples pressing the edges together to seal. Trim the edge with a sharp knife and make 5 little slashes on top of the lid for the steam to escape. (Can be frozen at this stage.) " +
+                            "\n\t\u2022Brush it all with the egg white and sprinkle with caster sugar. Bake for 40-45 mins, until golden, then remove and let it sit for 5-10 mins." +
+                            " \n\nSprinkle with more sugar and serve while still warm from the oven with softly whipped cream."
+                        };
+
                         // Insert Recipes into the database
                         cxn.Insert(NutellaBrownies);
                         cxn.Insert(Cookies);
+                        cxn.Insert(ApplePie);
                         
 
                        
