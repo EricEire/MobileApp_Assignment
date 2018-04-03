@@ -104,10 +104,28 @@ namespace MobileApp_Assignment.DataAccess
                             " \n\nSprinkle with more sugar and serve while still warm from the oven with softly whipped cream."
                         };
 
+                        Recipe Meringue = new Recipe()
+                        {
+                            RecipeID = 104,
+                            RecipeTitle = "Meringue",
+                            RecipeDescription = "Crisy surface, chewy center...mmmm",
+                            RecipeIngredients="3 Large Eggs \n175g Golden Caster Sugar",
+                            RecipeSteps= "\t\u2022Preheat your oven to 100 \u00B0C Celcius" +
+                            "\n\t\u2022Separate the eggs one at a time, placing each white in a cup or small bowl before adding it to the whisking bowl. " +
+                            "\n\t\u2022Start whisker on a slow speed and begin whisking for about two minutes, or until everything has become bubbly" +
+                            "\n\t\u2022Then switch to a medium speed for a further minute, then whisk at the highest speed and continue whisking through the soft peak stage until stiff peaks are formed. The whites should be all cloudy and foamy at this stage." +
+                            "\n\t\u2022Next, whisk the sugar in on fast speed, about a tablespoon at a time, until you have a stiff and glossy mixture with a satin sheen. Spoon onto baking sheets lined with baking parchment (or a liner) ready for baking." +
+                            "\n\t\u2022Bake for 1 hour 30 minutes to 1 hour 45 minutes in a fan oven, 1 hour 15 minutes in a conventional or gas oven, until the meringues sound crisp when tapped underneath and are a pale coffee colour. " +
+                            "\n\t\u2022Leave to cool on the trays or a cooling rack.  "
+
+
+                        };
+
                         // Insert Recipes into the database
                         cxn.Insert(NutellaBrownies);
                         cxn.Insert(Cookies);
                         cxn.Insert(ApplePie);
+                        cxn.Insert(Meringue);
                         
 
                        
