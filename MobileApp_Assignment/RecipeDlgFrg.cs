@@ -14,20 +14,6 @@ using MobileApp_Assignment.DataAccess;
 
 namespace MobileApp_Assignment
 {
-    //public class EditKeywordArgs : EventArgs
-    //{
-    //    public string title { get; }
-    //    public string Ing { get; }
-    //    public string steps { get; }
-
-    //    public EditKeywordArgs(string title, string Ing, string steps)
-    //    {
-    //        this.title = title;
-    //        this.Ing = Ing;
-    //        this.steps = steps;
-    //    }
-    //}
-
 
     public class RecipeDlgFrg : DialogFragment
     {

@@ -13,7 +13,7 @@
         android:typeface="serif"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:padding="10dp" />
+        android:paddingTop="10dp" />
     <EditText
         android:id="@+id/txtTemp"
         android:layout_width="match_parent"
@@ -46,25 +46,34 @@
         android:textSize="25dp"
         android:gravity="center" />
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_weight="1.25"
         android:layout_width="match_parent"
         android:layout_height="0dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5">
+        android:layout_weight="0.4"
+        android:paddingBottom="0dp">
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
             android:text="Convert"
-            android:id="@+id/btnConvertTemp" />
+            android:textColor="@android:color/black"
+            android:id="@+id/btnConvertTemp"
+            android:background="#ffffcc"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
             android:text="Home"
-            android:id="@+id/btnHome" />
+            android:textColor="@android:color/black"
+            android:id="@+id/btnHome"
+            android:background="#ffffcc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp" />
     </LinearLayout>
 </LinearLayout>

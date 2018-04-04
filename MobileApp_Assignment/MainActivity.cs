@@ -12,6 +12,8 @@ namespace MobileApp_Assignment
         Button btnConvertTemp;
         Button btnConvertWeight;
         Button btnRecipes;
+        Button btnShop;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,13 +25,24 @@ namespace MobileApp_Assignment
             btnConvertTemp= FindViewById<Button>(Resource.Id.btnConvertTemperature);
             btnConvertWeight = FindViewById<Button>(Resource.Id.btnConvertWeight);
             btnRecipes= FindViewById<Button>(Resource.Id.btnRecipes);
+            btnShop = FindViewById<Button>(Resource.Id.btnShop);
 
 
             btnConvertTemp.Click += BtnConvertTemp_Click;
             btnConvertWeight.Click += BtnConvertWeight_Click;
             btnRecipes.Click += BtnRecipes_Click;
+            btnShop.Click += BtnShop_Click;
 
 
+        }
+
+        private void BtnShop_Click(object sender, System.EventArgs e)
+        {
+            Intent browserIntent =
+                    new Intent(Intent.ActionView,
+                               Android.Net.Uri.Parse(@"http://www.decobake.com/categories/"));
+            browserIntent.AddFlags(ActivityFlags.NewTask);
+            StartActivity(browserIntent);
         }
 
         private void BtnRecipes_Click(object sender, System.EventArgs e)
