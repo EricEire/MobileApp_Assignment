@@ -19,6 +19,7 @@ namespace MobileApp_Assignment
     {
         List<Recipe> Recipes = new List<Recipe>();
         ListView LVrecipes;
+        Button btnHome;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,12 +29,20 @@ namespace MobileApp_Assignment
             // Create your application here
             SetContentView(Resource.Layout.RecipeLV);
             LVrecipes = FindViewById<ListView>(Resource.Id.lvRecipes);
+            btnHome = FindViewById<Button>(Resource.Id.btnHome);
 
             FetchRecipes();
 
             LVrecipes.Adapter = new RecipeAdapter(this, Recipes);
 
             LVrecipes.ItemClick += LVrecipes_ItemClick;
+            btnHome.Click += BtnHome_Click;
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            Intent resetIntent = new Intent(this, typeof(MainActivity));
+            StartActivityForResult(resetIntent, 90);
         }
 
         private void LVrecipes_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

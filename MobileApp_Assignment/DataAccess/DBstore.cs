@@ -110,7 +110,7 @@ namespace MobileApp_Assignment.DataAccess
                             RecipeTitle = "Meringue",
                             RecipeDescription = "Crisy surface, chewy center...mmmm",
                             RecipeIngredients="3 Large Eggs \n175g Golden Caster Sugar",
-                            RecipeSteps= "\t\u2022Preheat your oven to 100 \u00B0C Celcius" +
+                            RecipeSteps= "\t\u2022Preheat your oven to 100\u00B0C" +
                             "\n\t\u2022Separate the eggs one at a time, placing each white in a cup or small bowl before adding it to the whisking bowl. " +
                             "\n\t\u2022Start whisker on a slow speed and begin whisking for about two minutes, or until everything has become bubbly" +
                             "\n\t\u2022Then switch to a medium speed for a further minute, then whisk at the highest speed and continue whisking through the soft peak stage until stiff peaks are formed. The whites should be all cloudy and foamy at this stage." +
@@ -121,11 +121,89 @@ namespace MobileApp_Assignment.DataAccess
 
                         };
 
+                        Recipe Cheesecake = new Recipe()
+                        {
+                            RecipeID = 105,
+                            RecipeTitle = "Baileys Cheesecake",
+                            RecipeDescription = "Just for the grown ups?...",
+                            RecipeIngredients = "300g chocolate digestive biscuits, crushed \n125g butter \n50g milk chocolate \n200ml cream " +
+                            "\n450g cream cheese \n125g icing sugar \n1 GENEROUS measure of Bailey's Irish Cream \n50g grated chocolate",
+                            RecipeSteps = "\t\u2022Grease a 23cms/9” springform or loose bottomed cake tin with butter. " +
+                            "\n\t\u2022Melt the rest of butter and mix with the biscuits until butter is absorbed. " +
+                            "\n\t\u2022While still warm spread mixture into the base of the prepared tin and press down using the back of a spoon. " +
+                            "\n\t\u2022Place in the fridge and allow to set for about an hour. " +
+                            "\n\t\u2022In the meantime, grate the chocolate" +
+                            "\n\t\u2022Whip the cream until thickened and in a separate bowl whisk the cream cheese until it is soft. Beat in the icing sugar and the Bailey's. " +
+                            "\n\t\u2022Fold in the cream and chocolate until the mix is combined and spread evenly over the biscuit base. " +
+                            "\n\t\u2022Place in the fridge for at least 2 hours, preferably overnight." +
+                            "\n\t\u2022Decorate with a little grated chocolate"
+                        };
+
+                        Recipe Scone = new Recipe()
+                        {
+                            RecipeID = 106,
+                            RecipeTitle = "Scones",
+                            RecipeDescription = "Is it \"S-con\", or \"S-cone\"?",
+                            RecipeIngredients = "225g Odlums Self Raising Flour \n150ml Milk \nPinch of Salt \n25g Golden Caster Sugar \n25g Butter ",
+                            RecipeSteps = "\t\u2022Sieve flour and salt into a bowl, stir in sugar" +
+                            "\n\t\u2022Rub in butter (Use your hands to mix it together!)" +
+                            "\n\t\u2022Add sufficient milk to make a soft dough." +
+                            "\n\t\u2022Turn onto a floured board and gently knead to remove any cracks. " +
+                            "\n\t\u2022Roll out lightly to 1 inch in thickness. Cut into scones with a cutter dipped in flour." +
+                            "\n\t\u2022Place on a floured preheated baking sheet/tray, glaze if liked with beaten egg or milk." +
+                            "\n\t\u2022Bake in a preheated oven 220\u00B0C on upper shelf position for 10 mins approx." +
+                            "\n\t\u2022Cool on a wire tray."
+                        };
+
+                        Recipe Cupcakes = new Recipe()
+                        {
+                            RecipeID = 107,
+                            RecipeTitle = "Lemon Cupcakes",
+                            RecipeDescription = "Great for parties!",
+                            RecipeIngredients = "115g caster sugar \n115g butter \n1 egg \n115g self - raising flour \n2 drops lemon extract" +
+                            "\n140g icing sugar, sifted \n85g butter \n1 drop lemon extract \n1 tbsp milk",
+                            RecipeSteps = "\n\t\u2022Preheat oven 180°C/350°F/Gas mark 4." +
+                            "\n\t\u2022Cream butter and sugar." +
+                            "\n\t\u2022Add egg and beat together." +
+                            "\n\t\u2022Sift flour and fold gently in." +
+                            "\n\t\u2022Add lemon drops, milk and mix together." +
+                            "\n\t\u2022Spoon the mixture into cases and bake for around 10 - 15 mins." +
+                            "\n\t\u2022Remove from the oven and leave to cool before spreading the icing." +
+                            "\n\n \t\t\t\t\tTo make our icing \n" +
+                            "\n\t\u2022In a mixing bowl, beat togther icing sugar and butter." +
+                            "\n\t\u2022Add lemon extract and milk." +
+                            "\n\t\u2022Beat until smooth." +
+                            "\n\t\u2022Enjoy!" +
+                            "\n\nOptional: Decorate your cakes!"
+                        };
+
+                        Recipe BananaBread = new Recipe()
+                        {
+                            RecipeID = 108,
+                            RecipeTitle = "Chocolate Banana Bread",
+                            RecipeDescription = "Super simple, super tasty",
+                            RecipeIngredients = "3 ripe bananas \n2 eggs \n120g Greek yogurt \n100g honey \n190g flour \n1 tsp vanilla extract " +
+                            "\n1 tsp baking soda \n150g dark chocolate chips \n100g peanut butter" +
+                            "\n20g cocoa powder" +
+                            "\n60g honey \n1 tsp vanilla extract \n40ml milk",
+                            RecipeSteps = "\n\t\u2022Heat the oven to 180˚C/350˚F. Grease and line a loaf pan. " +
+                            "\n\t\u2022In a medium mixing bowl, mash the bananas, then add all the wet ingredients and mix." +
+                            "\n\t\u2022Add all the dry ingredients,mix, then add the chocolate chips and stir to combine." +
+                            "\n\t\u2022Pour the batter into the prepared pan.Bake for about 50 minutes or until a toothpick comes out clean." +
+                            "\n\n   \t\t\t\t\tMeanwhile, make the frosting. \n" +
+                            "\n\t\u2022In a food processor, add peanut butter, cocoa powder, honey, milk and vanilla and pulse." +
+                            "\n\t\u2022Let the banana bread cool before frosting"
+                        };
+
                         // Insert Recipes into the database
                         cxn.Insert(NutellaBrownies);
                         cxn.Insert(Cookies);
                         cxn.Insert(ApplePie);
                         cxn.Insert(Meringue);
+                        cxn.Insert(Cheesecake);
+                        cxn.Insert(Scone);
+                        cxn.Insert(Cupcakes);
+                        cxn.Insert(BananaBread);
                         
 
                        
