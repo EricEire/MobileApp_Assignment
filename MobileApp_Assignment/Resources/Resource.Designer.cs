@@ -67,19 +67,22 @@ namespace MobileApp_Assignment
 			public const int Brownie = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Cupcake1 = 2130837506;
+			public const int btn = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int recipeBg = 2130837507;
+			public const int Cupcake1 = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Recipebg2 = 2130837508;
+			public const int recipeBg = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int TempBg = 2130837509;
+			public const int Recipebg2 = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int Weightbg = 2130837510;
+			public const int TempBg = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Weightbg = 2130837511;
 			
 			static Drawable()
 			{
