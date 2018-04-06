@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="Home"
         android:id="@+id/btnHome"
-        android:background="@drawable/btn"
+        android:background="@drawable/btnhome"
         android:textColor="@android:color/black"
         android:layout_marginLeft="140dp"
         android:layout_marginRight="140dp"
